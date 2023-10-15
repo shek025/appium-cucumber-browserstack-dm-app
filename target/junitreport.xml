@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="210.310069">
+    <testcase classname="Launch the app and download given Newspapser edition and Read though it." name="Scenario 1: Verify the Newspaper edition is downloadable." time="122.765349">
+        <system-out><![CDATA[Given User launched Mail+ application.......................................passed
+When On Newspaper tab, scroll down to Recent issues and scroll right and tap on 'SEE MORE' button.passed
+And On Archive tab, tap to download Sept "24" edition.......................passed
+And On the paywall carousel, sign with credential provided..................passed
+Then Wait for the edition to download completed.............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Launch the app and download given Newspapser edition and Read though it." name="Scenario 2: Verify the Images on Gallery section." time="87.54472">
+        <system-out><![CDATA[Given User is On the downloaded Sept 24 edition.............................passed
+When Navigate to Page "13" on PDF view that displays "Every One's Talking about " story (Page 13).passed
+And Tap on the Image Gallery is displayed on top of the page................passed
+And Now tap on camera icon to open full screen and traverse through all gallery images.passed
+Then On last image close the image by clicking on Close button to return to ALB (Article Light Box).passed
+]]></system-out>
+    </testcase>
+</testsuite>

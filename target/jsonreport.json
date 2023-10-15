@@ -1,0 +1,212 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 20371918800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.initiazeDriver()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Scenario 1: Verify the Newspaper edition is downloadable.",
+        "description": "",
+        "id": "launch-the-app-and-download-given-newspapser-edition-and-read-though-it.;scenario-1:-verify-the-newspaper-edition-is-downloadable.",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1883479900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User launched Mail+ application",
+            "match": {
+              "location": "steps.launchApp()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 10451653200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "On Newspaper tab, scroll down to Recent issues and scroll right and tap on \u0027SEE MORE\u0027 button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027SEE MORE\u0027",
+                  "offset": 75
+                }
+              ],
+              "location": "steps.openRecentIssue(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2062706100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "On Archive tab, tap to download Sept \"24\" edition",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"24\"",
+                  "offset": 37
+                }
+              ],
+              "location": "steps.download(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 66625995800,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "On the paywall carousel, sign with credential provided",
+            "match": {
+              "location": "steps.on_the_paywall_carousel_sign_with_credential_provided()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 21367883200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Wait for the edition to download completed",
+            "match": {
+              "location": "steps.verifyDownload()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@End2End"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 20520929700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.initiazeDriver()"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "Scenario 2: Verify the Images on Gallery section.",
+        "description": "",
+        "id": "launch-the-app-and-download-given-newspapser-edition-and-read-though-it.;scenario-2:-verify-the-images-on-gallery-section.",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 37956605300,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User is On the downloaded Sept 24 edition",
+            "match": {
+              "arguments": [
+                {
+                  "val": "24",
+                  "offset": 31
+                }
+              ],
+              "location": "steps.user_is_On_the_downloaded_Sept_edition(Integer)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 21487860500,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Navigate to Page \"13\" on PDF view that displays \"Every One\u0027s Talking about \" story (Page 13)",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"13\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"Every One\u0027s Talking about \"",
+                  "offset": 48
+                },
+                {
+                  "val": "13",
+                  "offset": 89
+                }
+              ],
+              "location": "steps.navigate_to_Page_on_PDF_view_that_displays_story_Page(String,String,Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3186753900,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Tap on the Image Gallery is displayed on top of the page",
+            "match": {
+              "location": "steps.tap_on_the_Image_Gallery_is_displayed_on_top_of_the_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3351579000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Now tap on camera icon to open full screen and traverse through all gallery images",
+            "match": {
+              "location": "steps.now_tap_on_camera_icon_to_open_full_screen_and_traverse_through_all_gallery_images()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1040763100,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "On last image close the image by clicking on Close button to return to ALB (Article Light Box)",
+            "match": {
+              "location": "steps.on_last_image_close_the_image_by_clicking_on_Close_button_to_return_to_ALB_Article_Light_Box()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Launch the app and download given Newspapser edition and Read though it.",
+    "description": "",
+    "id": "launch-the-app-and-download-given-newspapser-edition-and-read-though-it.",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/DownloadNewsPaper.feature",
+    "tags": []
+  }
+]
